@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prostat_projet3.controllers.MainController">
+    <children>
+        <AnchorPane layoutY="25.0" prefHeight="550.0" prefWidth="950.0" style="-fx-background-color: #fff; -fx-background-radius: 0.5em;">
+            <children>
+                <Button fx:id="btn_signin" layoutX="14.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="150.0" styleClass="btn_sgn" stylesheets="@CSS/style.css" text="Connexion" />
+                <Button fx:id="btn_singup" layoutX="14.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="150.0" styleClass="btn_sgn" stylesheets="@CSS/style.css" text="Nouveau" />
+                <Button fx:id="btn_close" layoutX="904.0" mnemonicParsing="false" onAction="#onBtnClose" styleClass="btn_close" stylesheets="@CSS/style.css" text="x">
+                    <font>
+                        <Font name="Arial Black" size="19.0" />
+                    </font>
+                </Button>
+                <Label layoutX="73.0" layoutY="479.0" text="O">
+                    <font>
+                        <Font name="Gadugi" size="42.0" />
+                    </font>
+                </Label>
+                <AnchorPane fx:id="pn_signup" layoutX="560.0" layoutY="41.0" prefHeight="500.0" prefWidth="390.0" style="-fx-background-color: #fff;">
+                    <children>
+                        <Label layoutX="122.0" layoutY="86.0" text="Inscivez-vous" textFill="#5a0cc0">
+                            <font>
+                                <Font name="SansSerif Regular" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="184.0" layoutY="113.0" text="ici" textFill="#5a0cc0">
+                            <font>
+                                <Font name="SansSerif Regular" size="24.0" />
+                            </font>
+                        </Label>
+                        <PasswordField layoutX="63.0" layoutY="305.0" prefHeight="45.0" prefWidth="265.0" promptText="mot de passe" styleClass="input" stylesheets="@CSS/style.css">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <TextField layoutX="63.0" layoutY="239.0" prefHeight="45.0" prefWidth="265.0" promptText="utilisateur" styleClass="input" stylesheets="@CSS/style.css">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </padding>
+                        </TextField>
+                        <Button layoutX="173.0" layoutY="403.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50%;" styleClass="bg" stylesheets="@CSS/style.css" text="&gt;" textFill="WHITE">
+                            <font>
+                                <Font name="SansSerif Bold" size="20.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="email" layoutX="63.0" layoutY="173.0" prefHeight="45.0" prefWidth="265.0" promptText="email" styleClass="input" stylesheets="@CSS/style.css">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </padding>
+                        </TextField>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pn_signin" layoutX="560.0" layoutY="41.0" prefHeight="500.0" prefWidth="390.0" style="-fx-background-color: #fff;">
+                    <children>
+                        <Label layoutX="108.0" layoutY="86.0" text="Connectez-vous" textFill="#5a0cc0">
+                            <font>
+                                <Font name="SansSerif Regular" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="184.0" layoutY="113.0" text="ici" textFill="#5a0cc0">
+                            <font>
+                                <Font name="SansSerif Regular" size="24.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="mdp" layoutX="63.0" layoutY="261.0" prefHeight="45.0" prefWidth="265.0" promptText="mot de passe" styleClass="input" stylesheets="@CSS/style.css">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <TextField fx:id="utilisateur" layoutX="63.0" layoutY="195.0" prefHeight="45.0" prefWidth="265.0" promptText="utilisateur" styleClass="input" stylesheets="@CSS/style.css">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </padding>
+                        </TextField>
+                        <Button fx:id="connexion" layoutX="173.0" layoutY="364.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50%;" styleClass="bg" stylesheets="@CSS/style.css" text="&gt;" textFill="WHITE">
+                            <font>
+                                <Font name="SansSerif Bold" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="181.0" prefHeight="600.0" prefWidth="380.0" style="-fx-background-radius: 0.5em;" styleClass="bg" stylesheets="@CSS/style.css">
+            <children>
+                <Label layoutX="126.0" layoutY="215.0" text="Bienvenu sur" textFill="WHITE">
+                    <font>
+                        <Font name="SansSerif Regular" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="88.0" layoutY="253.0" text="PRO-STAT" textFill="WHITE">
+                    <font>
+                        <Font name="SansSerif Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="142.0" layoutY="69.0" text="Ps" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe Script" size="80.0" />
+                    </font>
+                </Label>
+                <Label layoutX="151.0" layoutY="525.0" text="by Pentagone" textFill="WHITE">
+                    <font>
+                        <Font name="SansSerif Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

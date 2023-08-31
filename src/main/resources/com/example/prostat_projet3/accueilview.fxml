@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prostat_projet3.controllers.FenetreController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="200.0" styleClass="bg" stylesheets="@CSS/sidebarstyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+            <children>
+                <VBox alignment="TOP_CENTER" layoutY="14.0" prefHeight="473.0" prefWidth="200.0">
+                    <children>
+                        <Pane prefHeight="140.0" prefWidth="140.0" styleClass="img-view" stylesheets="@CSS/sidebarstyle.css" VBox.vgrow="NEVER">
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="30.0" right="30.0" top="30.0" />
+                            </VBox.margin>
+                        </Pane>
+                        <Label alignment="CENTER" prefHeight="45.0" prefWidth="200.0" text="THIERRY" textFill="#ff9f40" VBox.vgrow="SOMETIMES">
+                            <font>
+                                <Font name="SansSerif Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="208.0" prefWidth="200.0" VBox.vgrow="SOMETIMES">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="newPerso" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onNewPerso" prefHeight="50.0" prefWidth="200.0" styleClass="btn-menu" stylesheets="@CSS/sidebarstyle.css" text="+  Ajout" VBox.vgrow="SOMETIMES">
+                                    <font>
+                                        <Font name="SansSerif Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="recherche" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onrecherche" prefHeight="50.0" prefWidth="200.0" styleClass="btn-menu" stylesheets="@CSS/sidebarstyle.css" text="¤  Recherche" VBox.vgrow="SOMETIMES">
+                                    <font>
+                                        <Font name="SansSerif Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="statistique" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onStatistique" prefHeight="50.0" prefWidth="200.0" styleClass="btn-menu" stylesheets="@CSS/sidebarstyle.css" text="&amp;  Stats Généraux" VBox.vgrow="SOMETIMES">
+                                    <font>
+                                        <Font name="SansSerif Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="apropo" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Onapropo" prefHeight="50.0" prefWidth="200.0" styleClass="btn-menu" stylesheets="@CSS/sidebarstyle.css" text="?  A Propos" VBox.vgrow="SOMETIMES">
+                                    <font>
+                                        <Font name="SansSerif Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <Button layoutX="69.0" layoutY="569.0" mnemonicParsing="false" styleClass="btn-quit" stylesheets="@CSS/sidebarstyle.css" text="&lt; Quitter" underline="true" AnchorPane.bottomAnchor="20.0">
+                    <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panePrincipal" layoutX="200.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #0b0218;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutY="-3.0" prefHeight="40.0" prefWidth="800.0" style="-fx-background-color:  #440990;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="43.0" layoutY="7.0" text="/\  Accueil" textFill="WHITE">
+                            <font>
+                                <Font name="SansSerif Bold" size="22.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Label layoutX="14.0" layoutY="57.0" text="Ps" textFill="#ff9f40">
+                    <font>
+                        <Font name="Segoe Script" size="32.0" />
+                    </font>
+                </Label>
+                <Label layoutX="80.0" layoutY="87.0" text="PRO-Stat" textFill="#ff9f40">
+                    <font>
+                        <Font name="SansSerif Bold" size="16.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="1.0" layoutY="200.0" prefHeight="350.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Label alignment="CENTER" layoutY="24.0" prefWidth="800.0" text="Bienvenu !" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Bold" size="40.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="100.0" prefWidth="800.0" text="&quot;Pour un recensement organisé&quot;." textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Italic" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_CENTER" layoutY="167.0" prefWidth="800.0" text="Démarrer" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Regular" size="18.0" />
+                            </font>
+                            <padding>
+                                <Insets left="50.0" right="50.0" />
+                            </padding>
+                        </Label>
+                        <Button layoutY="205.0" mnemonicParsing="false" prefWidth="800.0" style="-fx-background-color: transparent;" text="Ajouter un nouvel individu..." textFill="#7211f0" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutY="231.0" mnemonicParsing="false" prefWidth="800.0" style="-fx-background-color: transparent;" text="Rechercher un individu..." textFill="#7211f0" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutY="257.0" mnemonicParsing="false" prefWidth="800.0" style="-fx-background-color: transparent;" text="Voir les statistiques généraux..." textFill="#7211f0" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="SansSerif Regular" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

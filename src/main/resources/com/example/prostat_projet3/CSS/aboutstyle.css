@@ -1,0 +1,18 @@
+.pn {
+    -fx-border-width: 2px;
+    -fx-border-color: #7211f0;
+    -fx-border-radius: 0.5em;
+    -fx-background-color: rgba(114, 17, 240, 0.2);
+}
+.pn-dev {
+    -fx-border-color: #ff9f40;
+    -fx-background-color: rgba(255, 159, 64, 0.2);
+}
+.title {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+.title2 {
+    -fx-font-size: 16px;
+}

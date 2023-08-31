@@ -1,0 +1,86 @@
+.table {
+    -fx-border-width: 1px;
+    -fx-border-color: #ff9f40;
+    -fx-background-color: rgba(255, 159, 64, 0.2);
+}
+.table-header {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 11px;
+    -fx-background-color: #ff9f40;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+}
+
+.input {
+    -fx-text-fill: #000000;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(114, 18, 240,0.3);
+}
+.label-input {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: #7211f0;
+}
+.cb-input {
+    -fx-text-fill: #000000;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 12px;
+    -fx-background-color: rgba(114, 18, 240,0.3);
+    /*-fx-accent-color:  #7211f0;*/
+}
+.btn-input {
+    -fx-text-fill: #000000;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(114, 18, 240,0.6);
+}
+.btn-fin-input {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-family: sans-serif;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0.3em;
+    -fx-background-radius: 0.3em;
+}
+.del {
+    -fx-text-fill: rgb(255, 26, 26, 0.8);
+    -fx-background-color: tranparent;
+    -fx-border-color: rgb(255, 26, 26, 0.8);
+}
+.del:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.del:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.15);
+}
+.save {
+    -fx-text-fill: #fff;
+    -fx-background-color: rgba(16, 194, 75, 0.8);
+    -fx-border-color: rgba(16, 194, 75, 0.8);
+}
+.save:hover {
+    -fx-background-color: rgba(16, 194, 75, 0.9);
+    -fx-border-color: rgba(16, 194, 75, 0.9);
+}
+.save:pressed {
+    -fx-background-color: rgba(16, 194, 75, 1);
+    -fx-border-color: rgba(16, 194, 75, 1);
+}
+.input-rech {
+    -fx-background-color: tranparent;
+    -fx-border-width: 1px;
+    -fx-border-color: #ff9f40;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0px;
+}
+.btn-rech {
+    -fx-text-fill: #000000;
+    -fx-background-color: #ff9f40;
+}
+.btn-modif {
+    -fx-border-color: #ff9f40;
+    -fx-text-fill: #ff9f40;
+}
